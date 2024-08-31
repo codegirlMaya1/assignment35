@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Webpage</title>
+        <style>
+            body, script {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: aliceblue;
+                color: black;
+            }
+            input, button {
+                margin: 10px 0;
+            }
+            .result {
+                margin-top: 20px;
+            }
+           
+        </style>
+        
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4"> FREE STRING TESTER</h1>
+              <p class="lead"> Use this platform to try a variety of string functions and/or conversions...</p>
+            </div>
+          </div>
+        <input type="text" id="mixedCaseInput" placeholder="Enter mixed-case text">
+        <button onclick="convertString()">Convert</button>
+        <p id="convertedOutput"></p>
+        
+        <script>
+            function convertString() {
+              const mixedCaseInput = document.getElementById('mixedCaseInput').value;
+              const lowerCase = mixedCaseInput.toLowerCase();
+              const upperCase = mixedCaseInput.toUpperCase();
+              document.getElementById('convertedOutput').innerHTML = `
+                <strong>Lowercase:</strong> ${lowerCase}<br>
+                <strong>Uppercase:</strong> ${upperCase}
+              `;
+            }
+          </script>
+
+          <input type="text" id="userInput" placeholder="Enter text">
+          <button onclick="getStringLength()">Get Length</button>
+          <p id="lengthOutput"></p>
+
+          <script>
+            function getStringLength() {
+              const userInput = document.getElementById('userInput').value;
+              const length = userInput.length;
+              document.getElementById('lengthOutput').innerText = `Length: ${length}`;
+            }
+          </script>
+
+          <h1>String Manipulation</h1>
+          <label for="userInput">Enter a string:</label>
+          <input type="text" id="userInput" placeholder="Type something...">
+          <button id="new" onclick="manipulateString()">Submit</button>
+          <div class="result" id="result"></div>
+          <script src="script1.js"></script>
+
+        
+          
+            
+        
+    </body>
+</html>

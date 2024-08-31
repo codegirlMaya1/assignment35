@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Numbers</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+          }
+          
+          .flex-item {
+            flex: 1;
+            margin: 10px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+          }
+          
+          /* Responsive layout for smaller screens */
+          @media (max-width: 600px) {
+            .flex-container {
+              flex-direction: column;
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item"> Enter two numbers from <strong> LIST A</strong> between 1 and 10 <strong> seperated by commas </strong> that best describe you:
+            <ol>
+           <li> Ambitious</li> 
+            <li>Adventurous </li> 
+           <li> Affable </li>
+            <li>Affectionate </li>
+            <li> Agile </li>
+            <li> Alert </li>
+            <li> Altruistic </li>
+            <li> Amiable </li>
+           <li>Amusing </li>
+            <li> Analytical </li>
+        </ol>       
+        </div>
+        <div class="flex-item"> Enter two numbers from <strong> LIST A</strong> between 1 and 10 <strong> seperated by commas </strong> that best describe you:
+
+            <ol>
+                <li> Balanced</li>
+                <li>Beautiful </li>
+                <li>Benevolent </li>
+                <li> Blissful</li>
+                <li> Brave </li>
+                <li>Bright </li>
+                <li>Brilliant </li>
+                <li> Calm </li>
+                <li>Capable  </li>
+                <li>Caring </li>
+            </ol>
+        </div>
+
+        <div class="flex-item"> Enter two numbers from <strong> LIST A</strong> between 1 and 10 <strong> seperated by commas </strong> that best describe you:
+          <ol>
+            <li>Cheerful</li>
+            <li> Creative</li>
+            <li> Cultured</li>
+            <li> Curious</li>
+            <li> Daring</li>
+            <li> Decisive</li>
+            <li>Dedicated</li>
+            <li> Dynamic</li>
+            <li> Easygoing</li>
+            <li> Educated</li>
+          </ol>
+        </div>
+    </div>
+
+    <h1>Double Numbers</h1>
+    <input type="text" id="numbersInput" placeholder="Enter numbers separated by commas">
+    <button onclick="processNumbers()">Submit</button>
+    <p id="result"></p>
+
+    <script src="script1.js"></script>
+</body>
+</html>
